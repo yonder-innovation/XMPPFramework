@@ -25,9 +25,9 @@ Pod::Spec.new do |s|
   s.default_subspec = 'default'
 
   s.subspec 'default' do |ss|
-	  ss.source_files = ['Core/**/*.{h,m}',
-	                    'Authentication/**/*.{h,m}', 'Categories/**/*.{h,m}',
-	                    'Utilities/**/*.{h,m}', 'Extensions/**/*.{h,m}']
+	  ss.source_files = ['Core/*.{h,m}',
+	                    'Authentication/**/*.{h,m}', 'Categories/*.{h,m}',
+	                    'Utilities/*.{h,m}', 'Extensions/**/*.{h,m}']
 	  ss.ios.exclude_files = 'Extensions/SystemInputActivityMonitor/**/*.{h,m}'
 	  ss.libraries = 'xml2', 'resolv'
 	  ss.frameworks = 'CoreData', 'SystemConfiguration', 'CoreLocation'
@@ -42,8 +42,8 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Swift' do |ss|
-	  ss.ios.deployment_target = '9.0'
-	  ss.tvos.deployment_target = '9.0'
+    ss.ios.deployment_target = '9.0'
+    ss.tvos.deployment_target = '9.0'
     ss.osx.deployment_target      = '10.10'
     ss.source_files = 'Swift/**/*.swift'
     ss.dependency 'XMPPFramework/default'
@@ -67,7 +67,7 @@ END
  #s.module_map = 'module/module.modulemap'
 
  s.subspec 'Core' do |core|
-core.source_files = ['XMPPFramework.h', 'Core/**/*.{h,m}', 'Vendor/libidn/*.h', 'Authentication/**/*.{h,m}', 'Categories/**/*.{h,m}', 'Utilities/**/*.{h,m}']
+core.source_files = ['XMPPFramework.h', 'Core/*.{h,m}', 'Vendor/libidn/*.h', 'Authentication/**/*.{h,m}', 'Categories/*.{h,m}', 'Utilities/*.{h,m}']
 core.vendored_libraries = 'Vendor/libidn/libidn.a'
 core.libraries = 'xml2', 'resolv'
 core.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(inherited) $(SDKROOT)/usr/include/libxml2 $(PODS_ROOT)/XMPPFramework/module $(SDKROOT)/usr/include/libresolv',
