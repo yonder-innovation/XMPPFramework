@@ -20,7 +20,8 @@ static const int xmppLogLevel = XMPP_LOG_LEVEL_INFO | XMPP_LOG_FLAG_SEND_RECV; /
 static const int xmppLogLevel = XMPP_LOG_LEVEL_WARN;
 #endif
 
-NSString *const XMLNS_XMPP_MAM = @"urn:xmpp:mam:2";
+//We use version 1 of the message archive system
+NSString *const XMLNS_XMPP_MAM = @"urn:xmpp:mam:1";
 static NSString *const QueryIdAttributeName = @"queryid";
 
 
