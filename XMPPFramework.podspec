@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
 	  }
     ss.resources = [ 'Extensions/**/*.{xcdatamodel,xcdatamodeld}']
 	  ss.dependency 'CocoaLumberjack' # Skip pinning version because of the awkward 2.x->3.x transition
-	  ss.dependency 'CocoaAsyncSocket', '~> 7.4.1'
+	  ss.dependency 'CocoaAsyncSocket', '~> 7.6.3'
 	  #ss.dependency 'KissXML', '~> 5.2'
 	  ss.dependency 'libidn', '~> 1.35'
   end
@@ -74,7 +74,7 @@ core.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(inherited) $(SDKROOT)/usr/include/
 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/XMPPFramework/Vendor/libidn"', 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES', 'OTHER_LDFLAGS' => '"-lxml2"', 'ENABLE_BITCODE' => 'NO'
 }
 core.dependency 'CocoaLumberjack','~>3.5.1'
-core.dependency 'CocoaAsyncSocket','~>7.4.1'
+core.dependency 'CocoaAsyncSocket','~>7.6.3'
 #core.ios.dependency 'XMPPFramework/KissXML'
 end
 
