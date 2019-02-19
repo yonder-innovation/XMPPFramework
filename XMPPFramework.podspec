@@ -63,8 +63,8 @@ grep '#define _XMPP_' -r /Extensions \
 >> XMPPFramework.h
 END
 
- s.preserve_path = 'module/module.modulemap'
-#s.module_map = 'module/module.modulemap'
+ #s.preserve_path = 'module/module.modulemap'
+ #s.module_map = 'module/module.modulemap'
 
  s.subspec 'Core' do |core|
 core.source_files = ['XMPPFramework.h', 'Core/**/*.{h,m}', 'Vendor/libidn/*.h', 'Authentication/**/*.{h,m}', 'Categories/**/*.{h,m}', 'Utilities/**/*.{h,m}']
@@ -91,7 +91,7 @@ ss.dependency 'XMPPFramework/Core'
 end
 
 s.subspec 'KissXML' do |ss|
-ss.source_files = ['Vendor/KissXML/**/*.{h,m}', 'module/module.modulemap']
+ss.source_files = ['Vendor/KissXML/**/*.{h,m}']
 ss.libraries = 'xml2','resolv'
 ss.xcconfig = {
 'HEADER_SEARCH_PATHS' => '$(inherited) $(SDKROOT)/usr/include/libxml2 $(PODS_ROOT)/XMPPFramework/module $(SDKROOT)/usr/include/libresolv'
