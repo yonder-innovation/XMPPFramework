@@ -8,7 +8,8 @@
 #import "XMPPModule.h"
 #import "XMPPResultSet.h"
 #import "XMPPIQ.h"
-@import KissXML;
+//@import KissXML;
+#import <KissXML/DDXML.h>
 
 @class XMPPIDTracker;
 @class XMPPMessage;

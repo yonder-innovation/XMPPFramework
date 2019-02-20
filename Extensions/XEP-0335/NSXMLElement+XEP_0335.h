@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
-@import KissXML;
+//@import KissXML;
+#import <KissXML/DDXML.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @interface NSXMLElement (XEP_0335)

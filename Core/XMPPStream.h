@@ -4,8 +4,10 @@
 #import "GCDMulticastDelegate.h"
 #import "LMGCDAsyncSocketMiddleware.h"
 
-@import KissXML;
-@import CocoaAsyncSocket;
+//@import KissXML;
+#import <KissXML/DDXML.h>
+//@import CocoaAsyncSocket;
+#import <CocoaAsyncSocket/GCDAsyncSocket.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

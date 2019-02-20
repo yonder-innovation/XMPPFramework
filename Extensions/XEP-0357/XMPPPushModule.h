@@ -10,7 +10,8 @@
 #import "XMPPJID.h"
 #import "XMPPIQ.h"
 
-@import KissXML;
+//@import KissXML;
+#import <KissXML/DDXML.h>
 
 @class XMPPPushOptions;
 
