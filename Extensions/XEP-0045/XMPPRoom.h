@@ -16,7 +16,7 @@ static NSString *const XMPPMUCAdminNamespace = @"http://jabber.org/protocol/muc#
 static NSString *const XMPPMUCOwnerNamespace = @"http://jabber.org/protocol/muc#owner";
 
 
-@interface XMPPRoom : XMPPModule
+@interface XMPPRoom : XMPPModule<XMPPStreamDelegate>
 {
 /*	Inherited from XMPPModule:
 	
